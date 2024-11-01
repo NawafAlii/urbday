@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="gif_container">
+        <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+    </div>
+    <div class="container">
+        
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Happy Birthday Taif !<3</strong>
+                        <p>
+                            thank you for always being there for me im so grateful to have you as my sister and my best friend, i appreciate
+                            you and love you so much, hope you have a great year ahead of you ! 
+                            - nawaf                          
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+            
+        </div>
+        
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
+
+<!-- 
+<div class="container">
+    <div >
+        <h1 class = "header_text">Hurrayyyy!!</h1>
+    </div>
+    <div class="gif_container">
+        <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+    </div>
+</div>
+-->
